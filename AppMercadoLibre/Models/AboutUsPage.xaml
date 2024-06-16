@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMercadoLibre.Models.AboutUsPage"
+             Title="AboutUsPage"
+             BackgroundColor="Yellow">
+    <Grid RowDefinitions=".1*,.2*,.6*,.1*">
+
+        <Label
+            Margin="20"
+            Text="Programmer data"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Grid Grid.Row="1" RowDefinitions="*,*,*"
+              RowSpacing="5">
+            <Label
+                Text="Name: Antonio Paez Vangel" 
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"></Label>
+
+            <Label 
+                Grid.Row="1"
+                Text="Email: antoniopaezvangel@gmail.com" 
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"></Label>
+            <Label 
+                Grid.Row="2"
+                Text="Phone:  +54 2954 233222" 
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"></Label>
+
+        </Grid>
+
+        <Image Grid.Row="2" Source="programador.png"></Image>
+
+        <Button Grid.Row="3"  Text="Back" TextColor="Black" Clicked="OnBackClicked" BackgroundColor="Yellow"></Button>
+
+    </Grid>
+</ContentPage>
